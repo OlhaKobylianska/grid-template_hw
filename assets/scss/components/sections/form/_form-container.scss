@@ -20,7 +20,7 @@
     grid-template-columns: 1fr;
   }
 
-  &--input {
+  &__block {
     @include sm {
       margin-top: 0;
       margin-bottom: 0;
@@ -36,7 +36,7 @@
       }
     }
 
-    &__sz {
+    &-input {
       width: 100%;
       height: $gap-x3;
       padding-right: $gap-lg;

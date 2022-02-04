@@ -709,11 +709,11 @@ a {
   line-height: 1.15em;
 }
 .about-container p:first-of-type::after {
-  content: "";
   position: absolute;
   top: 0;
   width: 2px;
   height: 200px;
+  content: "";
   background-color: rgba(99, 117, 136, 0.1);
 }
 .about-container__image {
@@ -748,7 +748,7 @@ a {
   padding: 0 20px;
   gap: 20px;
 }
-.form-container--input__sz {
+.form-container__block-input {
   width: 100%;
   height: 60px;
   padding-right: 30px;
@@ -761,60 +761,60 @@ a {
   background-color: rgba(255, 255, 255, 0.05);
   font-size: 1.125rem;
 }
-.form-container--input__sz[type=submit] {
+.form-container__block-input[type=submit] {
   cursor: pointer;
   letter-spacing: 0.1em;
   background-color: rgba(255, 255, 255, 0.1);
   font-weight: 400;
   line-height: 1.15;
 }
-.form-container--input__sz[type=submit]:hover {
+.form-container__block-input[type=submit]:hover {
   border-color: white;
   background-color: #d66926;
 }
-.form-container--input__sz:hover, .form-container--input__sz:focus {
+.form-container__block-input:hover, .form-container__block-input:focus {
   border-color: rgba(255, 255, 255, 0.15);
   border-bottom-color: white;
   background-color: rgba(255, 255, 255, 0.15);
 }
-.form-container--input input {
+.form-container__block input {
   -webkit-transition: color 1s, background-color 1s, border-color 1s;
   -o-transition: color 1s, background-color 1s, border-color 1s;
   transition: color 1s, background-color 1s, border-color 1s;
 }
-.form-container--input input::-webkit-input-placeholder {
+.form-container__block input::-webkit-input-placeholder {
   color: #637588;
   font-weight: 400;
 }
-.form-container--input input::-moz-placeholder {
+.form-container__block input::-moz-placeholder {
   color: #637588;
   font-weight: 400;
 }
-.form-container--input input:-ms-input-placeholder {
+.form-container__block input:-ms-input-placeholder {
   color: #637588;
   font-weight: 400;
 }
-.form-container--input input::-ms-input-placeholder {
+.form-container__block input::-ms-input-placeholder {
   color: #637588;
   font-weight: 400;
 }
-.form-container--input input::placeholder {
+.form-container__block input::placeholder {
   color: #637588;
   font-weight: 400;
 }
-.form-container--input input:hover::-webkit-input-placeholder {
+.form-container__block input:hover::-webkit-input-placeholder {
   color: #8c9bab;
 }
-.form-container--input input:hover::-moz-placeholder {
+.form-container__block input:hover::-moz-placeholder {
   color: #8c9bab;
 }
-.form-container--input input:hover:-ms-input-placeholder {
+.form-container__block input:hover:-ms-input-placeholder {
   color: #8c9bab;
 }
-.form-container--input input:hover::-ms-input-placeholder {
+.form-container__block input:hover::-ms-input-placeholder {
   color: #8c9bab;
 }
-.form-container--input input:hover::placeholder {
+.form-container__block input:hover::placeholder {
   color: #8c9bab;
 }
 .post__actions {
@@ -1218,7 +1218,7 @@ a {
   .form-container {
     grid-template-columns: repeat(2, 1fr);
   }
-  .form-container--input:first-of-type {
+  .form-container__block:first-of-type {
     grid-column-end: 3;
     grid-column-start: 1;
   }
@@ -1269,7 +1269,7 @@ a {
   .form-container {
     grid-template-columns: 1fr;
   }
-  .form-container--input {
+  .form-container__block {
     margin-top: 0;
     margin-bottom: 0;
     grid-column-end: 3;
